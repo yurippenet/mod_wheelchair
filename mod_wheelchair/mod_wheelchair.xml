@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Wheelchair</name>
+    <author>Kristian Gausel</author>
+    <version>0.0.1</version>
+    <description>Represents a wheelchair</description>
+    <files>
+        <filename>mod_wheelchair.xml</filename>
+        <filename module="mod_wheelchair">mod_wheelchair.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    <config>
+		<fields name="params">
+			<fieldset name="Technical Data">
+				<field
+					name="list_technicaldata"
+					type="repeatable"
+					icon="list"
+					label="Technical Data"
+					description="The technical data table" 
+					default="{'title': 'info'}"
+
+					>
+					<fieldset hidden="true" name="list_technicaldata_modal" repeat="true">
+						<field 
+							name="title"
+							label="Title"
+							type="text"
+						/>
+						<field 
+							name="info"
+							label="Info"
+							type="text"
+						/>
+					</fieldset>
+				</field>
+			</fieldset>
+		</fields>
+    </config>
+</extension>
