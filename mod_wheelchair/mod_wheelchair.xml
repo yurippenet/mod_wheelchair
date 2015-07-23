@@ -14,14 +14,14 @@
     </files>
     <config>
 		<fields name="params">
-			<fieldset name="Technical Data">
+			<fieldset name="technicaldata" label="Technical Data">
 				<field
 					name="list_technicaldata"
 					type="repeatable"
 					icon="list"
 					label="Technical Data"
 					description="The technical data table" 
-					default="{'title': 'info'}"
+					default="{'title': [], 'info': []}"
 
 					>
 					<fieldset hidden="true" name="list_technicaldata_modal" repeat="true">

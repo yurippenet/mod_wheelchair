@@ -16,7 +16,8 @@ require_once dirname(__FILE__) . '/helper.php';
 //Prepare fields
 $technicalData = $params->get("list_technicaldata");
 
-//$helper = modWheelchairHelper::getHello($params);
+//Prepare elements
+$table = modWheelchairHelper::generateTechnicalTable($technicalData);
 
 
 require JModuleHelper::getLayoutPath('mod_wheelchair');

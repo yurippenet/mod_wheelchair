@@ -10,7 +10,7 @@
 class modWheelchairHelper
 {
 
-    public static function getHello($params)
+    public static function generateTechnicalTable($technicaldata)
     {
         return 'Hello, World!';
     }
